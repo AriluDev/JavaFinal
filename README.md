@@ -101,8 +101,8 @@ El sistema implementa autenticación basada en JWT:
 
 ### 📌 Requisitos
 
-- Java 17 o superior
-- Maven o Gradle
+- Java 21
+- MavenWraper
 - PostgreSQL
 
 ---
