@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 @Data
 @Entity
 @Table(name = "usuarios")
-public class Usuario implements UserDetails { // <--- Agregamos esto
+public class Usuario implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -39,7 +39,7 @@ public class Usuario implements UserDetails { // <--- Agregamos esto
     )
     private Set<Rol> roles;
 
-    // Métodos obligatorios de Spring Security
+    
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return roles.stream()

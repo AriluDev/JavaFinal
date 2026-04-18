@@ -12,5 +12,5 @@ public class Rol {
     private Integer id;
 
     @Column(nullable = false, unique = true)
-    private String nombre; // Aquí guardaremos "ROLE_ADMIN" o "ROLE_USUARIO"
+    private String nombre; 
 }

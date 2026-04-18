@@ -44,7 +44,7 @@ public class PrestamoController {
             return ResponseEntity.badRequest().body("No hay stock disponible para este libro");
         }
 
-        // Restar stock
+        
         libro.setStock(libro.getStock() - 1);
         libroRepository.save(libro);
 
@@ -67,7 +67,7 @@ public class PrestamoController {
             prestamo.setEstado("DEVUELTO");
             prestamo.setFechaDevolucion(LocalDateTime.now());
             
-            // Aumentar stock del libro devuelto
+            
             Libro libro = prestamo.getLibro();
             libro.setStock(libro.getStock() + 1);
             libroRepository.save(libro);

@@ -15,14 +15,12 @@ public class Prestamo {
     private LocalDateTime fechaPrestamo;
     private LocalDateTime fechaDevolucion;
 
-    private String estado; // Ej: "ACTIVO", "DEVUELTO"
-
-    // Relación Muchos a Uno con Usuario
-    @ManyToOne
+    private String estado; 
+    
     @JoinColumn(name = "usuario_id", nullable = false)
     private Usuario usuario;
 
-    // Relación Muchos a Uno con Libro
+   
     @ManyToOne
     @JoinColumn(name = "libro_id", nullable = false)
     private Libro libro;
