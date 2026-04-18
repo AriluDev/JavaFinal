@@ -6,6 +6,8 @@ Este proyecto consiste en el desarrollo de una API RESTful para la gestión de b
 
 El sistema está construido con Java y Spring Boot, utilizando una base de datos relacional (PostgreSQL) y seguridad basada en JWT (JSON Web Token).
 
+word: https://1drv.ms/w/c/06d49ddfd45f579b/IQCpuk8MCLG2R4weYBVSTvREAWalORxCow595I11i6IoY0o?e=hfwm8i
+
 ---
 
 ## 🚀 Características
